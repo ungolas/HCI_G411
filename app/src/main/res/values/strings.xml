@@ -5,4 +5,7 @@
     <string name="startseite">Startseite</string>
     <string name="dokumente">Dokumente</string>
     <string name="chat">Chat</string>
+    <string name="dok_name">Dokumenten Name</string>
+    <string name="austellungsdatum">Austellungsdatum</string>
+    <string name="kategorie">Kategorie</string>
 </resources>
