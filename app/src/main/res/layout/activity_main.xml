@@ -9,7 +9,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Startseite"
+        android:text="@string/startseite"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -20,7 +20,7 @@
         android:id="@+id/termin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Termine"
+        android:text="@string/termine"
         android:layout_below="@id/title"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
@@ -30,10 +30,30 @@
         android:id="@+id/profil_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profil"
+        android:text="@string/profil"
         android:layout_below="@id/termin_button"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:onClick="openProfil"/>
+
+    <Button
+        android:id="@+id/dokumente_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dokumente"
+        android:layout_below="@id/profil_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openDoks"/>
+
+    <Button
+        android:id="@+id/chat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chat"
+        android:layout_below="@id/dokumente_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openChat"/>
 
 </RelativeLayout>

@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".TerminverwaltungActivity">
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/dok_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/termine"
+        android:text="@string/dokumente"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -16,8 +16,8 @@
         android:layout_marginBottom="16dp"/>
 
     <ListView
-        android:id="@+id/termin_list_view"
+        android:id="@+id/dok_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/title"/>
+        android:layout_below="@id/dok_title"/>
 </RelativeLayout>
