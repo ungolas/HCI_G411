@@ -1,4 +1,4 @@
-package univie.hci.hci_app_g411;
+package com.example.m3;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("univie.hci.hci_app_g411", appContext.getPackageName());
+        assertEquals("com.example.m3", appContext.getPackageName());
     }
 }

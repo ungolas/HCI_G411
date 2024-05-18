@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'univie.hci.hci_app_g411'
+    namespace 'com.example.m3'
     compileSdk 34
 
     defaultConfig {
-        applicationId "univie.hci.hci_app_g411"
+        applicationId "com.example.m3"
         minSdk 27
         targetSdk 34
         versionCode 1

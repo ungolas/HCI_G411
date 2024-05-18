@@ -1,4 +1,4 @@
-package univie.hci.hci_app_g411;
+package com.example.m3;
 
 import org.junit.Test;
 

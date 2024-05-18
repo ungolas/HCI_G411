@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HCI_APP_G411"
+rootProject.name = "M3"
 include ':app'
