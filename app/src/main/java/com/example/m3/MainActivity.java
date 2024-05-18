@@ -22,4 +22,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+
+    public void openDoks(View view) {
+        Intent intent = new Intent(this, DokActivity.class);
+        startActivity(intent);
+    }
+
+    public void openChat(View view) {
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
 }
