@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- Title -->
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
@@ -15,7 +17,7 @@
             android:id="@+id/dok_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dok_name"
+            android:text="Coronatest - Laborergebnis"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -23,7 +25,7 @@
             android:id="@+id/dok_datum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/austellungsdatum"
+            android:text="12.02.2022"
             android:textSize="16sp"
             android:layout_marginTop="4dp" />
 
@@ -31,18 +33,51 @@
             android:id="@+id/dok_kategorie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/kategorie"
+            android:text="Laborergebnisse"
             android:textSize="16sp" />
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/dok_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_below="@id/linear_layout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
 
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/linear_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image 1 -->
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dok1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <!-- Image 2 -->
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dok2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <!-- Image 3 -->
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dok3"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
