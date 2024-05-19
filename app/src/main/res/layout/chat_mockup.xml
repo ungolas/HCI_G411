@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Message 1 (Left) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="100dp"
+                android:text="Grüßgott, wie geht es Ihnen? Haben Sie sich von Ihrer Hüft-OP gut erholt Herr Schabernack?"
+                android:layout_gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 2 (Right) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="Hallo Herr Doktor Vierlefanz! Danke, dass Sie sich bei mir melden. Die Hüft-OP hat mir schon recht zugesetzt. Aber es wird jeden Tag besser."
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 3 (Left) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="100dp"
+                android:text="Das freut mich zu hören. Ich wollte mich nur kurz erkundigen, ob Sie noch Schmerzen haben und ob Sie sich gut bewegen können."
+                android:layout_gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 4 (Right) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="Die Schmerzen sind noch da, aber sie sind auszuhalten. Das Laufen fällt mir noch schwer, aber ich übe jeden Tag."
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 5 (Left) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="100dp"
+                android:text="Das ist gut zu hören. Bitte machen Sie weiter so. Wenn die Schmerzen schlimmer werden oder Sie sich unsicher fühlen, zögern Sie nicht, mich anzurufen."
+                android:layout_gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 6 (Right) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="Vielen Dank, Herr Doktor. Ich werde auf jeden Fall auf Sie zukommen, wenn ich Hilfe brauche."
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 7 (Left) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="100dp"
+                android:text="Gut, dann wünsche ich Ihnen weiterhin gute Besserung. Wie finden Sie die App die unsere Praxis jetzt zur Kommunikation mit den Patienten nutzt?"
+                android:layout_gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 8 (Right) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="Die App ist wirklich praktisch. Ich kann schnell und einfach mit Ihnen in Kontakt treten und meine Fragen stellen. Vielen Dank, dass Sie mir das ermöglicht haben."
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 9 (Left) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="100dp"
+                android:text="Das freut mich zu hören. Wir möchten unseren Patienten den bestmöglichen Service bieten. Wenn Sie weitere Fragen haben, zögern Sie nicht, uns zu kontaktieren."
+                android:layout_gravity="start"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Message 10 (Right) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="Vielen Dank, das werde ich machen. Ich schätze Ihre Hilfe und Unterstützung sehr."
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
