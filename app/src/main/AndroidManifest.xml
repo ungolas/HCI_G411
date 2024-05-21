@@ -13,12 +13,18 @@
         android:theme="@style/Theme.M3"
         tools:targetApi="31">
         <activity
+            android:name=".DoctorPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".DokDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ChatActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".DokActivity"
             android:exported="false" /> <!-- Launch Aktivität -->

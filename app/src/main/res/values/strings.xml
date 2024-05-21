@@ -8,4 +8,15 @@
     <string name="dok_name">Dokumenten Name</string>
     <string name="austellungsdatum">Austellungsdatum</string>
     <string name="kategorie">Kategorie</string>
+    <string name="doctorDescription">Spezialist für Orthopädie und Unfallchirurgie\n\n
+
+Willkommen in der Praxis von Dr. Hagen,\n Ihrem erfahrenen Orthopäden im Herzen von Hintertupfing.\n\nUnsere Praxis bietet Ihnen eine umfassende Betreuung und modernste Behandlungsmethoden für alle Beschwerden des Bewegungsapparates.\n\n
+
+Unsere Leistungen:\n
+\n
+ - Individuelle Beratung und Diagnostik
+ - Konservative und operative Therapie von Gelenk- und Wirbelsäulenerkrankungen
+ - Sportmedizinische Betreuung und Rehabilitation\n
+ - Modernste arthroskopische Operationen (Schlüssellochchirurgie)\n
+ - Stoßwellentherapie und Akupunktur</string>
 </resources>

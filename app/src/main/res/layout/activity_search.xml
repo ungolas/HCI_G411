@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/searchSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/searchFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="50dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/foundDoctor1"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_black"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/searchFilter"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/doctorIcon1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="Doctor Icon"
+            android:src="@drawable/doctor1"/>
+
+        <TextView
+            android:id="@+id/doctorName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/doctorIcon1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctorIcon1"
+            android:layout_marginStart="10dp"
+            android:text="Dr. Hagen"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/doctorLocation1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/doctorName1"
+            app:layout_constraintEnd_toEndOf="@+id/doctorName1"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName1"
+            android:layout_marginTop="4dp"
+            android:text="3333 Hintertupfing"
+            android:textStyle="normal"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/foundDoctor2"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/foundDoctor1"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/doctorIcon2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="Doctor Icon"
+            android:src="@drawable/doctor2"/>
+
+        <TextView
+            android:id="@+id/doctorName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/doctorIcon2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctorIcon2"
+            android:layout_marginStart="10dp"
+            android:text="Prim. Priv.-Doz. DDr. Lazar, MSc"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/doctorLocation2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/doctorName2"
+            app:layout_constraintEnd_toEndOf="@+id/doctorName2"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName2"
+            android:layout_marginTop="4dp"
+            android:text="1020 Wien"
+            android:textStyle="normal"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/foundDoctor3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_black"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/foundDoctor2"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/doctorIcon3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="Doctor Icon"
+            android:src="@drawable/doctor3"/>
+
+        <TextView
+            android:id="@+id/doctorName3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/doctorIcon3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctorIcon3"
+            android:layout_marginStart="10dp"
+            android:text="Dr. Inferno"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/doctorLocation3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/doctorName3"
+            app:layout_constraintEnd_toEndOf="@+id/doctorName3"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName3"
+            android:layout_marginTop="4dp"
+            android:text="1220 Wien"
+            android:textStyle="normal"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/foundDoctor4"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/foundDoctor3"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/doctorIcon4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="Doctor Icon"
+            android:src="@drawable/doctor4"/>
+
+        <TextView
+            android:id="@+id/doctorName4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/doctorIcon4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctorIcon4"
+            android:layout_marginStart="10dp"
+            android:text="DDr. Ungolas"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/doctorLocation4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/doctorName4"
+            app:layout_constraintEnd_toEndOf="@+id/doctorName4"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName4"
+            android:layout_marginTop="4dp"
+            android:text="1240 Wien"
+            android:textStyle="normal"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
