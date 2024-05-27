@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openChat(View view) {
-        Intent intent = new Intent(this, ChatActivity.class);
+        Intent intent = new Intent(this, ChatList.class);
         startActivity(intent);
     }
 }
