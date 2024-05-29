@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,41 +10,53 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profil"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Profil"
+        android:textSize="48sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/personal_data_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
         android:onClick="openPersonalData"
-        android:text="Persönliche Daten" />
+        android:text="Persönliche Daten"
+        android:textSize="34sp"
+        app:cornerRadius="10dp" />
 
     <Button
         android:id="@+id/language_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sprache"
         android:layout_below="@id/personal_data_button"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:onClick="changeLanguage"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:onClick="changeLanguage"
+        android:text="Sprache"
+        android:textSize="34sp"
+        app:cornerRadius="10dp" />
 
     <Button
         android:id="@+id/logout_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Abmelden"
         android:layout_below="@id/language_button"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:onClick="logout"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:onClick="logout"
+        android:text="Abmelden"
+        android:textSize="34sp"
+        app:cornerRadius="10dp" />
 
 </RelativeLayout>
