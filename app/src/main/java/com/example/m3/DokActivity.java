@@ -34,7 +34,7 @@ public class DokActivity extends AppCompatActivity {
 
         // 10 dummies
         for (int i = 1; i <= 20; i++) {
-            dokumentList.add(new Dokument("Dokument " + i, "Link " + i, "01.06.202" + i, "Category " + i));
+            dokumentList.add(new Dokument("Dokument " + i, "Link " + i, "01.06.20" + (40-i), "Category " + i));
         }
 
         adapter = new DokAdapter(this, dokumentList);

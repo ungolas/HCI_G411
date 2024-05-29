@@ -34,7 +34,7 @@ public class ChatList extends AppCompatActivity {
 
         // 10 dummies
         for (int i = 1; i <= 20; i++) {
-            chatList.add(new Dokument("Doktor:in " + i, "Link " + i, "01.06.202" + i, "Fachärzt:in im Bereich " + i));
+            chatList.add(new Dokument("Doktor:in " + i, "Link " + i, "01.06.20" + (40-i), "Fachärzt:in im Bereich " + i));
         }
 
         adapter = new DokAdapter(this, chatList);
