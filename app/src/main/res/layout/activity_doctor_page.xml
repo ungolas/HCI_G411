@@ -51,6 +51,7 @@
     <Button
         android:id="@+id/appointmentButton"
         android:layout_width="wrap_content"
+        android:onClick="openBookAppointment"
         android:layout_height="wrap_content"
         android:text="Termin buchen"
         android:layout_marginTop="24dp"

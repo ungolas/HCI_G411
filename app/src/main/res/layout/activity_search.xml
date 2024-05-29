@@ -37,6 +37,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/foundDoctor1"
+        android:onClick="openDoctorPage"
         android:layout_width="match_parent"
         android:background="@drawable/border_black"
         android:layout_marginTop="12dp"
@@ -78,6 +79,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/foundDoctor2"
+        android:onClick="openDoctorPage"
         android:layout_width="match_parent"
         android:background="@drawable/border_black"
         android:layout_height="wrap_content"
@@ -119,6 +121,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/foundDoctor3"
+        android:onClick="openDoctorPage"
         android:layout_width="match_parent"
         android:layout_marginTop="4dp"
         android:background="@drawable/border_black"
@@ -160,6 +163,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/foundDoctor4"
+        android:onClick="openDoctorPage"
         android:layout_marginTop="4dp"
         android:background="@drawable/border_black"
         android:layout_width="match_parent"
