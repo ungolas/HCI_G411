@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,51 +10,75 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/startseite"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/termin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/termine"
-        android:layout_below="@id/title"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="openTerminverwaltung"/>
+        android:onClick="openTerminverwaltung"
+        android:text="@string/termine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_button" />
 
     <Button
         android:id="@+id/profil_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="openProfil"
         android:text="@string/profil"
-        android:layout_below="@id/termin_button"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="openProfil"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
         android:id="@+id/dokumente_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dokumente"
-        android:layout_below="@id/profil_button"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="openDoks"/>
+        android:onClick="openDoks"
+        android:text="@string/dokumente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termin_button" />
 
     <Button
         android:id="@+id/chat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chat"
-        android:layout_below="@id/dokumente_button"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="openChat"/>
+        android:onClick="openChat"
+        android:text="@string/chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil_button" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="openSearch"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconPadding="0dp"
+        app:iconSize="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

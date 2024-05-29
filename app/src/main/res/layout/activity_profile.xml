@@ -20,11 +20,11 @@
         android:id="@+id/personal_data_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Persönliche Daten"
         android:layout_below="@id/title"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:onClick="openPersonalData"/>
+        android:layout_marginTop="100dp"
+        android:onClick="openPersonalData"
+        android:text="Persönliche Daten" />
 
     <Button
         android:id="@+id/language_button"
