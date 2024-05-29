@@ -19,6 +19,9 @@
             android:name=".DoctorPageActivity"
             android:exported="false" />
         <activity
+            android:name=".BookAppointmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
