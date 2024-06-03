@@ -13,7 +13,8 @@
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="32dp"
+        android:iconifiedByDefault="false"/>
 
     <Button
         android:id="@+id/searchSort"

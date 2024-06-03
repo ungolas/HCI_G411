@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,10 +26,15 @@ public class ChatList extends AppCompatActivity {
     private DokAdapter adapter;
     private List<Dokument> chatList;
 
+    SearchView searchChat;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_list);
+
+        searchChat = findViewById(R.id.searchChat);
+        searchChat.setQueryHint("Nachrichten suchen ...");
 
         chatListView = findViewById(R.id.chat_list_view);
         chatList = new ArrayList<>();
