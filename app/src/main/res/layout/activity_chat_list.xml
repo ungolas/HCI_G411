@@ -19,7 +19,8 @@
         android:id="@+id/searchChat"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/chat_title"/>
+        android:layout_below="@+id/chat_title"
+        android:iconifiedByDefault="false"/>
 
     <ListView
         android:id="@+id/chat_list_view"
