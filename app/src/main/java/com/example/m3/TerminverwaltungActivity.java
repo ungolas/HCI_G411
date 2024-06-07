@@ -8,6 +8,8 @@ import android.widget.ListView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +49,16 @@ public class TerminverwaltungActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        Button btnTerminBuchen = findViewById(R.id.btn_termin_buchen);
+        btnTerminBuchen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TerminverwaltungActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void showTerminDetails(Termin termin) {
